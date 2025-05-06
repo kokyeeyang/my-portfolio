@@ -247,6 +247,7 @@ export default function HomePage() {
               },
             ].map((cert, index) => (
               <iframe
+                key={index}
                 src={cert.image}
                 width="100%"
                 height="260px"

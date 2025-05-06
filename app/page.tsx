@@ -99,7 +99,7 @@ export default function HomePage() {
               ✅ Developed a full-stack movie booking app with seat layouts, Stripe integration, and user membership system
             </li>
             <li>
-              ✅ 6 years of professional experience building full-stack apps with React, Node.js, MongoDB, and PostgreSQL
+              ✅ 7 years of professional experience building full-stack apps with React, Node.js, MongoDB, and PostgreSQL
             </li>
             <li>
               ✅ Proficient in CI/CD, Docker, Azure, and GitHub Actions
@@ -202,18 +202,61 @@ export default function HomePage() {
       </section>
       {/* Education Section */}
       <section id="education" className="mt-20 max-w-4xl w-full">
-        <h2 className="text-3xl font-bold mb-6">Education</h2>
-        <p className="text-lg">
-          🎓 Bachelor of Finance — Drake University  
-        </p>
-        <p className="text-lg">
-          🎓 Next Academy Full Stack Web Development  
-        </p>
-        <ul className="list-disc ml-5 mt-2">
-          <li>Mastered the essentials of CSS, HTML, Javascript, Ruby on Rails and JQuery</li>
-          <li>Learn how to develop my app systematically with Git and also deploying on Heroku</li>
-          <li>Built my first web application within 10 weeks of starting this course</li>
-        </ul>
+        <h2 className="text-3xl font-bold mb-6">🎓 Education</h2>
+        <div className="space-y-6 text-lg">
+          <div>
+            <p className="font-semibold">Node.js Tutorial and Projects</p>
+            <p className="italic text-gray-300">Udemy | 2021</p>
+            <p className="text-gray-300">
+              Hands-on projects covering Express.js, MongoDB, and REST API development.
+            </p>
+          </div>
+          <div>
+            <p className="font-semibold">Full Stack Web Development Bootcamp</p>
+            <p className="italic text-gray-300">Next Academy | 2017</p>
+            <ul className="list-disc ml-5 mt-2 text-gray-300">
+              <li>Mastered CSS, HTML, JavaScript, Ruby on Rails, and jQuery</li>
+              <li>Learned Git workflows and Heroku deployment</li>
+              <li>Built my first full-stack app within 10 weeks</li>
+            </ul>
+          </div>
+          <div>
+            <p className="font-semibold">Bachelor of Finance</p>
+            <p className="italic text-gray-300">Drake University | 2013 – 2016</p>
+          </div>
+
+        </div>
+        <div className="mt-10">
+          <h3 className="text-2xl font-semibold mb-4">📜 Certifications</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {[
+              {
+                title: "Node.js Tutorial and Projects",
+                year: "2021",
+                image: "/images/udemy.pdf",
+              },
+              {
+                title: "Full Stack Web Development Bootcamp",
+                year: "2017",
+                image: "/images/next degree.pdf",
+              },
+              {
+                title: "Bachelor's of Finance",
+                year: "2016",
+                image: "/images/Uni certificate.pdf",
+              },
+            ].map((cert, index) => (
+              <iframe
+                src={cert.image}
+                width="100%"
+                height="260px"
+                className="border-2 rounded-lg"
+                title={cert.title}
+                allow="fullscreen"  // Allowing full-screen interaction
+              ></iframe>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* Resume Download */}

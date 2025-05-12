@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yee Yang Kok - Resume</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --text-color: #333;
+            --light-text: #666;
+            --background-color: #f4f4f4;
+            --accent-color: #3498db;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .resume-container {
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: var(--primary-color);
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header .contact-info {
+            color: var(--light-text);
+            font-size: 0.9em;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.4em;
+        }
+
+        .job, .project, .education-item {
+            margin-bottom: 20px;
+        }
+
+        .job-title, .project-title, .education-title {
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+
+        .job-details, .job-company, .project-details, .education-details {
+            color: var(--light-text);
+        }
+
+        .job-description, .project-description {
+            margin-top: 10px;
+        }
+
+        .job-description ul, .skills-list {
+            padding-left: 20px;
+        }
+
+        .skills-section {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .skills-column {
+            width: 48%;
+        }
+
+        .tech-skills {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+            }
+            .resume-container {
+                box-shadow: none;
+                padding: 0;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .resume-container {
+                padding: 20px;
+            }
+            .skills-section {
+                flex-direction: column;
+            }
+            .skills-column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <header class="header">
+            <h1>YEE YANG KOK</h1>
+            <div class="contact-info">
+                Software Developer | Full Stack Web Developer<br>
+                Puchong, Malaysia | 0192383575 | yee_yang94@hotmail.com<br>
+                <a href="https://linkedin.com">LinkedIn</a> | 
+                <a href="https://github.com/kokyeeyang">GitHub</a> | 
+                <a href="https://yeeyangkok.netlify.app">Portfolio</a>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title">Professional Summary</h2>
+            <p>Results-driven Full Stack Developer with 7 years of experience in architecting scalable web applications across recruitment, government, finance, and IoT sectors. Expertise in React, Next.js, Node.js, PHP, and MySQL, with a proven track record in API integration, cloud deployment, and implementing machine learning solutions.</p>
+        </section>
+
+        <section class="section tech-skills">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-section">
+                <div class="skills-column">
+                    <strong>Languages & Frameworks:</strong>
+                    <ul>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React</li>
+                        <li>Next.js</li>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>PHP</li>
+                        <li>Laravel</li>
+                        <li>CodeIgniter</li>
+                    </ul>
+                </div>
+                <div class="skills-column">
+                    <strong>Tools & Platforms:</strong>
+                    <ul>
+                        <li>Docker</li>
+                        <li>Azure</li>
+                        <li>AWS</li>
+                        <li>CI/CD</li>
+                        <li>GitHub Actions</li>
+                        <li>Drupal</li>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Professional Experience</h2>
+            
+            <div class="job">
+                <div class="job-title">Software Developer | Spencer Ogden</div>
+                <div class="job-company">Jan 2023 – Present | Kuala Lumpur, Malaysia</div>
+                <div class="job-description">
+                    <ul>
+                        <li>Developed and deployed scalable web applications using Next.js, Node.js, PHP, and MySQL</li>
+                        <li>Created machine learning-based finance prediction models</li>
+                        <li>Integrated CI/CD pipelines with GitHub Actions and Azure</li>
+                        <li>Optimized MySQL queries to streamline business processes</li>
+                        <li>Implemented Bullhorn API integration for improved reporting</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-title">Software Engineer | Poet Farmer</div>
+                <div class="job-company">Jul 2022 – Dec 2022 | Kuala Lumpur, Malaysia</div>
+                <div class="job-description">
+                    <ul>
+                        <li>Developed backend solutions for City of Rotterdam's digital platform using Drupal</li>
+                        <li>Led backend development for International IDEA's global democracy assessment platform</li>
+                        <li>Contributed to Laravel backend development for Pedle, an IoT assistant for elderly users</li>
+                        <li>Built and maintained comprehensive RESTful APIs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-title">Software Engineer (Contractor) | PwC Malaysia</div>
+                <div class="job-company">Aug 2021 – Jun 2022 | Kuala Lumpur, Malaysia</div>
+                <div class="job-description">
+                    <ul>
+                        <li>Developed and expanded PwC Marketplace across Malaysia, Vietnam, and Indonesia</li>
+                        <li>Implemented secure deployment workflows using Docker and Azure App Services</li>
+                        <li>Established automated backup management systems for critical business data</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-title">Junior Software Engineer | SagaOS</div>
+                <div class="job-company">May 2018 – Jul 2021 | Kuala Lumpur, Malaysia</div>
+                <div class="job-description">
+                    <ul>
+                        <li>Developed core HR portal features using PHP frameworks</li>
+                        <li>Created backend tools for HR analytics</li>
+                        <li>Designed intuitive job form workflows</li>
+                        <li>Optimized SQL database queries to enhance performance</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Key Projects</h2>
+            
+            <div class="project">
+                <div class="project-title">BookAnyMovie | Full Stack Movie Booking App</div>
+                <div class="project-details">Personal Project</div>
+                <div class="project-description">
+                    <ul>
+                        <li>Architected full-stack movie booking application</li>
+                        <li>Implemented intuitive seat selection interface</li>
+                        <li>Integrated Stripe payment gateway</li>
+                        <li>Tech Stack: React, Node.js, Express, MongoDB, Stripe API</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-title">International IDEA Democracy Tracker</div>
+                <div class="project-details">Professional Project</div>
+                <div class="project-description">
+                    <ul>
+                        <li>Developed backend systems for global democracy monitoring platform</li>
+                        <li>Implemented data visualization features</li>
+                        <li>Created content management system for policy researchers</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Education</h2>
+            
+            <div class="education-item">
+                <div class="education-title">Certifications & Courses</div>
+                <div class="education-details">
+                    <ul>
+                        <li>Node.js Course | Udemy | Jul 2023 – Jan 2024</li>
+                        <li>Full Stack Web Development Bootcamp | NEXT Academy | Jan 2018 – Mar 2018</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div class="education-title">Degrees</div>
+                <div class="education-details">
+                    <ul>
+                        <li>Bachelor's in Finance | Drake University, USA | 2013 – 2016</li>
+                        <li>BBA | INTI International University | 2012 – 2013</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Additional Achievements</h2>
+            <ul>
+                <li>Proficient in CI/CD, Docker, Azure, and GitHub Actions</li>
+                <li>Successfully transitioned from finance to technology</li>
+                <li>Committed to delivering scalable, user-focused digital solutions</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
